@@ -1,0 +1,53 @@
+{% load static %}
+
+<!doctype html>
+  <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FirePoint</title>
+    <link rel="stylesheet" href="../static/css/stylesheet.css">
+    <link rel="stylesheet" href="../static/css/forms.css">
+    <script src="../static/javascript/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/e0a50a6f3e.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon (1).ico' %}">
+  </head>
+
+  <body>
+
+        <!--NAVIGATION!-->
+        <nav class="navBar">
+          <div class="brandTitleContainer">
+
+            <a href="{% url 'index' %}"><p class="brandTitle colour"><b>FirePoint Scotland Ltd</b></p></a>
+          </div>
+          <a href="javascript:void(0);" class="toggleButton">
+            <i class="fa-solid fa-bars"></i>
+          </a>
+
+          <div class="navBarLinks">
+            <ul>
+
+                  <li><a href="{% url 'index' %}" class="navButton">Home</a></li>
+                  <li><a href="{% url 'about' %}" class="navButton">About Us</a></li>
+                  <li><a href="{% url 'services' %}" class="avButton">Services</a></li>
+                  <li><a href="{% url 'contact' %}" class="avButton">Contact Us</a></li>
+
+            </ul>
+          </div>
+        </nav>
+
+
+        <div class="content">
+          {% block content %}
+          {% endblock %}
+        </div>
+
+        <div class="footer">
+          <p>FirePoint Scotland Ltd. All rights reserved. Unauthorised use of any text or images from this site is strictly prohibited.</p>
+        </div>
+
+
+
+  </body>
+</html>

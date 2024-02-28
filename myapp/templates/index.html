@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<!--  HERO SECTION  !-->
+<div class="section" style="box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.5);">
+  <div class="underNavSpace"></div>
+  <div class="underNavSpace">
+    <div class="fiftyFiftyContainer">
+      <div class="fiftyWidth fiftyLeft">
+        <div class="heroSectionTextContainer">
+          <div class="heroSectionText">
+            <p class="midHeader">Secure your peace of mind with FirePoint Scotland's trusted fire safety solutions</p>
+            <br><br>
+            <a class="button" href="{% url 'services' %}">Learn more</a><a class="button" href="{% url 'contact' %}">Contact us</a>
+          </div>
+        </div>
+      </div>
+      <div class="fiftyWidth fiftyRight">
+          <img class="heroImage" src="{% static 'images/fireStuff.png' %}" alt="">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--  SERVICES OVERVIEW  !-->
+<div class="section darkSection" style="margin-top:30px;background: linear-gradient(to bottom, #505050 0%, #1a1a1a 100%);">
+
+  <p class="midHeader"> Services Overview</p>
+  <br><br>
+  <div id="servicesContainer">
+  <div class="box1">
+    <img class="servicesIcon" src="{% static 'images/fireAlarmIcon.png' %}" alt="">
+    <br>
+    <p class="smallHeader">Fire Alarm<br>Care</p>
+    <br>
+    <p class="truncate">We will make servicing your fire alarm panel an effortless legal obligation for you. Our trained engineers will carry out your servicing in accordance with BS5839-1:2017 and offer you a cost effective way to ensure your sounders will activate if needed, giving you peace of mind.
+    </p></div>
+  <div class="box2">
+    <img class="servicesIcon" src="{% static 'images/fireExtinguisherIcon.png' %}" alt="">
+    <br>
+    <p class="smallHeader">Fire Extinguisher<br>Installation</p>
+    <br>
+    <p class="truncate">We will make servicing your fire alarm panel an effortless legal obligation for you. Our trained engineers will carry out your servicing in accordance with BS5839-1:2017 and offer you a cost effective way to ensure your sounders will activate if needed, giving you peace of mind.
+    </p>
+  </div>
+  <div class="box3">
+    <img class="servicesIcon" src="{% static 'images/fireBlanketIcon.png' %}" alt="">
+    <br>
+    <p class="smallHeader">Fire Blanket<br>Basic Service</p>
+    <br>
+    <p class="truncate">We will make servicing your fire alarm panel an effortless legal obligation for you. Our trained engineers will carry out your servicing in accordance with BS5839-1:2017 and offer you a cost effective way to ensure your sounders will activate if needed, giving you peace of mind.
+    </p>
+  </div>
+  <div class="box4">
+    <img class="servicesIcon" src="{% static 'images/miscFireIcon1.png' %}" alt="">
+    <br>
+    <p class="smallHeader">Fire Annual<br>Basic Service</p>
+    <br>
+    <p class="truncate">We will make servicing your fire alarm panel an effortless legal obligation for you. Our trained engineers will carry out your servicing in accordance with BS5839-1:2017 and offer you a cost effective way to ensure your sounders will activate if needed, giving you peace of mind.
+    </p>
+  </div>
+
+  <span class="stretch"></span>
+  </div>
+  <br>
+  <div class="fullWidthAlwaysCentred">
+      <a class="smallButton" href="{% url 'services' %}">view all services</a>
+  </div>
+
+  <br>
+  <br>
+
+  <!--  ABOUT US  !-->
+  <div class="innerSection" style="color:#2b2b2b">
+    <p class="midHeader">About Us</p>
+    <br>
+    <p>FirePoint Scotland Limited is one of Scotland’s leading independent fire protection companies, offering a wide range of products and services to meet today's stringent fire protection
+requirements.
+
+The Company was originally formed in 1987 and operates from its base in Larkhall. Primarily covering the whole of Scotland and the North of England, but we do cover the entire UK  to meet the needs of National Company’s when required.</p>
+    <br>
+    <div class="industryLogos">
+    <img class="industryLogo" src="{% static 'images/ISO.png' %}" height="100px;">
+    <img class="industryLogo" src="{% static 'images/BAFE.png' %}" height="100px;">
+    <img class="industryLogo" src="{% static 'images/FIA.png' %}" height="100px;" >
+    <img class="industryLogo" src="{% static 'images/constructionOnline.jpeg' %}" height="100px;">
+    <img class="industryLogo" src="{% static 'images/CHAS.png' %}" height="100px;">
+    </div>
+
+    <br>
+    <p>We are dedicated to a commitment to Total Quality Management and is backed up by our ISO 9001 registration helping to ensure that your service is completed on a 'right first time' basis, every time.
+
+We  offer a complete solution to fire safety.  With one company looking after all of your fire needs, we can work with you to ensure a risk assessment led process to provide you with optimum fire safety, with no gaps, or overlaps.  When considering your fire safety strategy, you should aim to prevent fire, detect fire, contain fire and have plans to escape fire. </p>
+  </div>
+  <br><br>
+  <p class="midHeader">Why Choose Us?</p>
+  <br>
+  <p>At FirePoint, we're not just about providing fire safety equipment; we're about delivering peace of mind. Our commitment to excellence is evident in every product and service we offer, from advanced fire extinguishers to comprehensive smoke detection systems. With over a decade of expertise in the fire safety industry, our team is dedicated to ensuring your premises are equipped with the most reliable and effective safety solutions available. Why choose us? Because we prioritise your safety, offering personalised service, unparalleled expertise, and the highest quality products. At FirePoint Ltd, protecting what matters most to you is our top priority.</p>
+  <br><br>
+</div>
+
+
+
+<div class="section">
+  <br><br>
+  <p class="midHeader">Frequently Asked Questions</p>
+  <br>
+  <button class="accordion backgroundColour">What types of fire safety equipment do you offer?</button>
+  <div class="panel">
+    <p>We provide a comprehensive range of fire safety equipment, including fire extinguishers, smoke detectors, fire alarms, emergency lighting, and fire hoses. Each product is selected for its reliability and compliance with safety standards, ensuring you have the best protection available.</p>
+  </div>
+
+  <button class="accordion backgroundColour">Can FirePoint Scotland Ltd help with the installation and maintenance of fire safety equipment?</button>
+  <div class="panel">
+    <p>Absolutely. Beyond supplying top-quality fire safety equipment, we offer professional installation services. Our team of experts will ensure your equipment is installed correctly and provide routine maintenance checks to keep everything in optimal working condition, ensuring your safety and compliance with regulations.</p>
+  </div>
+
+  <button class="accordion backgroundColour">How often should fire safety equipment be inspected?</button>
+  <div class="panel">
+    <p>Fire safety equipment should be inspected at least annually to ensure it's in good working order. However, some equipment may require more frequent checks. We recommend consulting with our specialists to establish a maintenance schedule that meets legal requirements and ensures your equipment's reliability.</p>
+  </div>
+
+  <button class="accordion backgroundColour">Do you offer customised fire safety solutions for businesses?</button>
+  <div class="panel">
+    <p>Yes, we do. We understand that every business has unique needs when it comes to fire safety. Our team works closely with you to assess your premises and provide tailored recommendations that suit your specific requirements, ensuring comprehensive protection and peace of mind.</p>
+  </div>
+  <br><br><br>
+  <p>Have another question not listed here? Feel free to <a href="{% url 'contact' %}">contact us</a> at any time</p>
+  <br>
+</div>
+
+
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+{% endblock %}

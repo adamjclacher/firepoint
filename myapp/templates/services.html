@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<!--  HERO SECTION  !-->
+<div class="section" style="box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.5);">
+  <div class="underNavSpace"></div>
+  <div class="underNavSpace">
+    <div class="fiftyFiftyContainer">
+      <div class="fiftyWidth fiftyLeft">
+        <div class="heroSectionTextContainer">
+          <div class="heroSectionText">
+            <p class="largeHeader colour">Services</p>
+            <br>
+            <p class="midHeader">Secure your peace of mind with FirePoint Scotland's trusted fire safety services</p>
+          </div>
+        </div>
+      </div>
+      <div class="fiftyWidth fiftyRight">
+          <img class="heroImage" src="{% static 'images/fireStuff.png' %}" alt="">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--  SERVICES OVERVIEW  !-->
+<div class="section darkSection" style="margin-top:30px;background: linear-gradient(to bottom, #505050 0%, #1a1a1a 100%);">
+
+
+  <p class="midHeader">Premier Care</p>
+  <br><br>
+  <p>This maintenance plan allows for the Basic Service of
+  fire extinguishers to be carried out in accordance with    BS 5306-3:2017 by our BAFE Registered Technicians.
+  <br><br>
+  The price quoted includes the general servicing of the appliances, greasing and making free all working parts and firing mechanisms, internal and external inspection to ensure that no defects are present, checking gauges and weighing the contents.
+  <br><br>
+  On completion of the service visit an engineers worksheet is provided detailing the all fire extinguishers maintained, their location, aged maintenance history giving date of manufacture, last extended service/overhaul dates, current and future required extended service/overhaul dates.
+  <br><br>
+  The state of compliance with wall bracketing/stands and location signage is also indicated on the report.
+  </p>
+
+  <br><br>
+
+  <button class="accordion backgroundColour topBorderRadius">Fire Alarm Care</button>
+  <div class="panel">
+  <p>Your fire alarm system has been installed to protect you and your building. Everyone depends on this system functioning properly in the event of a fire, acting as an early warning system and enabling safe and timely evacuation. You have a legal obligation to ensure that this warning system is in good working order and adheres to current regulatory standards.
+    <br><br>
+    We will make servicing your fire alarm panel an effortless legal obligation for you. Our trained engineers will carry out your servicing in accordance with BS5839-1:2017 and offer you a cost effective way to ensure your sounders will activate if needed, giving you peace of mind.
+    <br><br>
+    We can provide you with routine bi-annual alarm testing & servicing and offer an emergency 24-hour response call-out service.</p>
+  </div>
+
+  <button class="accordion backgroundColour">Emergency Light Care</button>
+  <div class="panel">
+  <p>Emergency lighting is required to be tested at regular intervals. We will attend and advise you of a service routine that suits you and your building requirements.
+  This can be annually or more frequently if required.
+  <br><br>
+  Emergency lighting can be ‘maintained’, i.e. on all the time, or ‘non-maintained’, i.e. normally off and only operates when the normal lighting fails.
+  <br><br>
+  Emergency lights should operate for one, two or three hours, depending on the application but in practice most emergency lights are three hour.
+  <br><br>
+  Emergency lights will also provide some use in the premises during a power failure other than in an emergency situation.
+  <br><br>
+  Whatever type of emergency lighting you already have in place we provide maintenance plans to suit.
+  <br><br>
+  All our maintenance work is carried out in accordance with BS 5266-1:2016 and BS 5266-8:2004 the codes of practice for maintenance of emergency lighting systems.
+  </p></div>
+
+  <button class="accordion backgroundColour">Fire Extinguisher Commissioning & Installation</button>
+  <div class="panel">
+  <p>The attending BAFE technician having scanned the wall suitability for services cables/pipes will then wall mount your fire extinguishers at the required height, specific to the size of fire extinguisher, using approved mounting brackets and fixings.
+    <br><br>
+  Our BAFE technician will ensuring fire extinguisher location is appropriate and in accordance with the type specific maximum travel distances, to meet the requirements of the British Standard 5306-8:2012.
+  <br><br>
+  Affixing of the required fire extinguisher location and identification signs to permanently mark the location of the fire extinguisher as required by British Standard 5306-8:2012.
+  </p></div>
+
+  <button class="accordion backgroundColour">Fire Blanket Commissioning & Installation</button>
+  <div class="panel">
+
+  <p>Fire blanket commissioning is the initial servicing and labelling of your fire blankets in accordance with the Fire Industry Association Code of Practice for fire blankets manufactured  to BS EN 1869
+    <br><br>
+  The commissioning of a fire blanket must be carried out upon removal from its packaging and transit protection, and immediately prior to placing in its designated place,
+    <br><br>
+  The attending BAFE technician having checked the
+  wall for suitability and services cables/pipes will wall
+  mount your fire blankets at the required height, using
+  our approved  fixings.
+  <br><br>
+  Our BAFE technician will ensuring fire blanket location is appropriate and in accordance with the Fire Industry Association Code of Practice.
+  <br><br>
+  Affixing of the required fire blanker location and identification signs to permanently mark the location of the fire blanket.
+  </p></div>
+
+  <button class="accordion backgroundColour bottomBorderRadius">Dry Rinser Plan</button>
+  <div class="panel">
+  <p>This maintenance plan allows for the annual maintenance of your dry risers to be carried out in accordance with BS 9990:2006 by our BAFE Registered Technicians.
+<br><br>
+Inlets, landing valves, drain valves, door hinges and locking arrangements to the Inlet and landing valve cabinets will be inspected every 6 months.
+<br><br>
+A complete hydrostatic pressure test will be carried out once a year of each dry riser. The dry riser inlet will be connected to a pump and water supply then charged and held at its design operating pressure (normally 10 bar) for 15 minutes whilst the pressure and all valves are monitored. Once the pressure test is completed the system will be drained so that it is left ready for immediate use.
+<br><br>
+On completion of the service visit an engineers worksheet is provided detailing the all fire risers maintained.
+</p></div>
+<br><br>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      this.style.borderBottomLeftRadius = 'initial'; // Use 'initial' or specify the original radius value
+      this.style.borderBottomRightRadius = 'initial';
+      panel.style.display = "none";
+
+    } else {
+      this.style.borderBottomLeftRadius = '0';
+      this.style.borderBottomRightRadius = '0';
+      panel.style.display = "block";
+
+    }
+  });
+}
+</script>
+
+{% endblock %}

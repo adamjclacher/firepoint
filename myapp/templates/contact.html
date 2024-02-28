@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<!--  HERO SECTION  !-->
+<div class="section fullHeight" style="box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.5);">
+  <div class="underNavSpace"></div>
+  <br>
+  <p class="midHeader">Contact Us</p>
+  <br>
+  <p>Have questions or need assistance? Get in touch with us today via email, and let's discuss how we can support your safety needs with our expert solutions.</p>
+  <br>
+  <p>Alternatively, call our office at 01698 881775</p>
+  <br>
+
+    <p class="inputLabel">Full Name</p>
+    <div class="outerInputField"><input class="innerInfoField" placeholder="e.g. Jack Moffat" name="fullName" required></div>
+
+    <p class="inputLabel">Email Address</p>
+    <div class="outerInputField"><input type="email" class="innerInfoField" placeholder="someone@somewhere.com" name="emailAddress" required></div>
+
+
+    <p class="inputLabel">Email Subject</p>
+    <div class="outerInputField"><input class="innerInfoField" placeholder="e.g. Smoke Alarm Query" name="subject" required></div>
+
+
+    <p class="inputLabel">Message</p>
+    <div class="outerInputField"><textarea class="innerInfoField" placeholder="" name="comments" rows="8" cols="80"></textarea></div>
+
+    <button type="submit" name="button" class="submitButton buttonBackground inlineBlock" style="margin-right:15px;">Submit</button>
+    <br><br>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
